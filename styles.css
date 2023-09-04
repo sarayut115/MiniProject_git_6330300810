@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f2f2f2;
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgb(14, 70, 251);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#weatherInfo {
+    margin-top: 20px;
+}
+
+.red-text {
+    color: red; /* กำหนดสีเป็นสีแดง */
+}
+
+
+/* CSS สำหรับไอคอนสภาพอากาศ */
+.weather-icon {
+    font-size: 4rem; /* ปรับขนาดไอคอนตามที่คุณต้องการ */
+}
+
+/* กำหนดสีให้กับไอคอนตาม weatherDescription */
+.weather-icon.fas.fa-sun {
+    color: yellow; /* สีเหลืองอมส้มสำหรับแสงแดด */
+}
+
+.weather-icon.fas.fa-cloud-rain {
+    color: rgb(28, 28, 255); /* สีที่เหมาะกับฝนสำหรับไอคอนเมฆฝน */
+}
+
+.weather-icon.fas.fa-cloud {
+    color: gray; /* สีที่เหมาะกับเมฆสำหรับไอคอนเมฆ */
+}
+
+
+
+/* CSS สำหรับดาร์กโหมด */
+body.dark-mode {
+    background-color: #333; /* สีพื้นหลังสำหรับดาร์กโหมด */
+    color: #fff; /* สีข้อความสำหรับดาร์กโหมด */
+}
+
+/* CSS สำหรับปุ่มดาร์กโหมด */
+#darkModeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
